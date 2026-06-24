@@ -1,5 +1,3 @@
-Prompts for Each File
-
 1. index.html
 Prompt:  
 *"Generate a complete HTML file using Bootstrap that includes:
@@ -24,7 +22,7 @@ Keep the design clean, professional, and engaging."*
 
 3. firebase.js
 Prompt:  
-*"Generate a JavaScript file that initializes Firebase Firestore and Authentication.
+*"Generate a JavaScript file that initializes Firebase Firestore and Authentication using modular SDK imports.
 Include functions to:
 
 Add tasks to Firestore.
@@ -32,7 +30,7 @@ Add tasks to Firestore.
 Fetch tasks in real time.
 
 Trigger notifications when deadlines are near.
-Use modular Firebase SDK imports."*
+Ensure proper export of db and auth for use in other files."*
 
 4. app.js
 Prompt:  
@@ -40,7 +38,7 @@ Prompt:
 
 Capture task input from index.html.
 
-Store tasks in Firebase.
+Store tasks in Firebase Firestore.
 
 Call Google AI Studio API to categorize tasks (urgent/important/routine).
 
@@ -76,9 +74,11 @@ Run through AI categorization, scheduling, reminders, and dashboard updates.
 Ensure outputs are clear for hackathon judges."*
 
 🎯 Hackathon Tip
-Feed each of these prompts separately into Google AI Studio. It will generate the code for each file. Then copy the outputs into your VS Code project structure:
+Feed each prompt separately into Google AI Studio.
 
+Copy the generated code into your VS Code project structure:
 
+Code
 project/
  ├── index.html
  ├── style.css
